@@ -1,35 +1,108 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
 
-<head>
+/* BACKGROUND */
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+.background{
 
-<title>Shopping Prime</title>
+width:100%;
+height:100vh;
 
-<link rel="stylesheet" href="css/style.css">
+background-image:url("../img/background.jpg");
 
-</head>
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
 
-<body>
+/* posicionar conteúdo no rodapé */
 
-<div class="background">
+display:flex;
+justify-content:center;
+align-items:flex-end;
 
-<div class="botoes">
+padding-bottom:60px;
 
-<a class="botao whatsapp" href="https://wa.me/SEU_NUMERO" target="_blank">
-Entrar no WhatsApp
-</a>
+}
 
-<a class="botao site" href="https://shoppingprime24.com.br" target="_blank">
-Acessar Loja
-</a>
+/* BOTÕES */
 
-</div>
+.botoes{
 
-</div>
+display:flex;
+flex-direction:column;
+gap:20px;
 
-</body>
-</html>
+align-items:center;
+
+}
+
+/* BOTÃO BASE */
+
+.botao{
+
+text-decoration:none;
+
+color:white;
+
+padding:18px 45px;
+
+font-size:22px;
+
+border-radius:40px;
+
+font-weight:bold;
+
+transition:0.3s;
+
+box-shadow:0 8px 25px rgba(0,0,0,0.4);
+
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+
+background:#25D366;
+
+}
+
+.whatsapp:hover{
+
+background:#1ebe5d;
+
+transform:scale(1.05);
+
+}
+
+/* SITE */
+
+.site{
+
+background:linear-gradient(45deg,#ff9800,#ffc107);
+
+}
+
+.site:hover{
+
+transform:scale(1.05);
+
+}
+
+/* RESPONSIVO */
+
+@media (max-width:600px){
+
+.botao{
+
+font-size:18px;
+padding:16px 35px;
+
+}
+
+}
+
 
