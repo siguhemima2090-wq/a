@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Oferta Especial</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:linear-gradient(135deg,#ff6a00,#ff0000);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.anuncio{
+
+background:white;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+max-width:900px;
+display:flex;
+flex-wrap:wrap;
+overflow:hidden;
+
+}
+
+.img{
+flex:1;
+min-width:300px;
+}
+
+.img img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.info{
+flex:1;
+padding:40px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.badge{
+background:#ff0000;
+color:white;
+padding:8px 15px;
+display:inline-block;
+border-radius:30px;
+font-size:14px;
+margin-bottom:15px;
+}
+
+h1{
+margin:0;
+font-size:28px;
+color:#222;
+}
+
+.preco{
+font-size:34px;
+color:#00a859;
+font-weight:bold;
+margin:20px 0;
+}
+
+.descricao{
+font-size:15px;
+color:#555;
+margin-bottom:25px;
+}
+
+.botao{
+
+background:#ff6a00;
+color:white;
+text-decoration:none;
+padding:15px;
+text-align:center;
+border-radius:8px;
+font-size:18px;
+font-weight:bold;
+transition:0.3s;
+
+}
+
+.botao:hover{
+background:#ff3c00;
+transform:scale(1.05);
+}
+
+@media(max-width:700px){
+
+.anuncio{
+flex-direction:column;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="anuncio">
+
+<div class="img">
+<img src="https://via.placeholder.com/500x400" alt="Produto">
+</div>
+
+<div class="info">
+
+<div class="badge">OFERTA ESPECIAL</div>
+
+<h1>Pano de Microfibra Automotiva 600GSM Premium</h1>
+
+<div class="preco">R$ 29,90</div>
+
+<div class="descricao">
+Ideal para lavagem, polimento e acabamento automotivo.
+Alta absorção, não risca a pintura e deixa brilho perfeito no carro.
+</div>
+
+<a class="botao" href="https://seusite.com/comprar">
+COMPRAR AGORA
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
